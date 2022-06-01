@@ -27,7 +27,7 @@ app.use(express.json({ limit: "50mb" }));
 app.use("/api/user",userRoutes)
 
 app.get("/",(req,res)=>{
-    res.json("Reached")
+    res.json("Home")
 })
 
 app.listen(port,()=>{
