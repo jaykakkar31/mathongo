@@ -67,7 +67,7 @@ exports.resetPassMail = async (to, token) => {
         <h2>Welcome to the MathonGo.</h2>
             
         <p style="margin-bottom: 30px;">Use this link to reset password</p>
-        <htth1 style="font-size: 40px; letter-spacing: 2px; text-align:center;">${token}</htth1>
+        <p style=" text-align:center;">${token}</p>
    </div>
     `,
 		});
