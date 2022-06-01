@@ -155,7 +155,7 @@ exports.forgotPassword = asyncHandler(async (req, res) => {
 	await user.save({ validateBeforeSave: false });
 
 	try {
-		const resetURL = `http://localhost:4000/resetPassword/${resetToken}`;
+		const resetURL = `https://mathongo-server.herokuapp.com/resetPassword/${resetToken}`;
 		resetPassMail(req.body.email, resetURL);
 
 		res.status(200).json({
